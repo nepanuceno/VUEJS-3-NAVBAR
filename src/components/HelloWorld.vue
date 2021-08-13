@@ -1,5 +1,10 @@
 <template>
   <div class="h-screen">
+        <button v-on:click="topMenu" class="fixed right-0 mt-2 text-gray-600 origin-top-right transform bg-white rounded-full shadow-lg opacity-50 text-8xl">
+          <i class="fas fa-chevron-circle-up"></i>
+        </button>
+
+    <!-- <i @:click="topMenu" class="fixed right-0 mt-2 text-gray-600 origin-top-right transform bg-white rounded-full shadow-lg opacity-50 text-8xl fas fa-chevron-circle-up"></i> -->
     <h1>Conteúdo</h1>
     <div id="a" class="h-48 pt-2 pl-2 mb-48 font-semibold text-white bg-blue-600">ITEM NA DIV #1</div>
     <div id="b" class="h-48 pt-2 pl-2 mb-48 font-semibold text-white bg-green-600">ITEM NA DIV #2</div>
@@ -13,6 +18,19 @@
 
 <script>
 export default {
-  name: "HelloWord"
+  name: "HelloWord",
+  data () {
+    return {
+      name: 'Content'
+      
+    }
+  },
+  
+  methods: {
+    topMenu(){
+      console.log('Teste')
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    }
+  }
 }
 </script>

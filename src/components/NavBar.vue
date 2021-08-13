@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row flex-wrap justify-between w-full h-20 font-sans text-white bg-gray-800 md:gap-3">
+    <div id="navbar" class="flex flex-row flex-wrap justify-between w-full h-20 font-sans text-white bg-gray-800 md:gap-3">
         <div class="flex flex-row flex-wrap self-center text-2xl border-r-2 border-gray-600">
             <div class="px-2 py-2 ">
                 <img class="w-16 h-16" src="../assets/logo.png" alt="Avatar">
