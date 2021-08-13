@@ -11,20 +11,20 @@
 
         
         <div class="flex-row self-center flex-grow hidden gap-6 font-medium md:flex">
-            <div class="menu"><a href="#">Item 1</a></div>
-            <div class="menu"><a href="#">Item 2</a></div>
-            <div class="menu"><a href="#">Item 3</a></div>
-            <div class="menu"><a href="#">Item 4</a></div>
-            <div class="menu"><a href="#">Item 5</a></div>
+            <div class="menu"><a href="#a">Item 1</a></div>
+            <div class="menu"><a href="#b">Item 2</a></div>
+            <div class="menu"><a href="#c">Item 3</a></div>
+            <div class="menu"><a href="#d">Item 4</a></div>
+            <div class="menu"><a href="#e">Item 5</a></div>
         </div>
 
         <div v-on:click="viewMenu" class="flex-row self-center flex-grow ml-2 md:hidden">
             <i class="text-3xl fas fa-bars"></i>
             <div :class="menu.value" class="absolute w-56 mt-2 font-sans font-medium text-black origin-top-right bg-white rounded-md shadow-lg sm:left-56 left-32 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 1</a></div>
-                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 2</a></div>
-                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 3</a></div>
-                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 4</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#a">Item 1</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#b">Item 2</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#c">Item 3</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#d">Item 4</a></div>
                 <div class="mt-2 ml-1"><a href="#">Item 5</a></div>
             </div>
         </div>
