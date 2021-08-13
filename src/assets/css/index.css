@@ -1,0 +1,8 @@
+/* ./src/css/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+    @apply transition ease-in-out duration-500 transform hover:text-green-500 hover:-translate-y-2.5 h-full hover:scale-125 cursor-pointer;
+}
