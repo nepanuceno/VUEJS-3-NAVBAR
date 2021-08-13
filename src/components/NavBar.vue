@@ -10,7 +10,7 @@
         </div>
 
         
-        <div class="flex-row self-center flex-grow hidden gap-6 font-medium bg-pink-400 md:flex">
+        <div class="flex-row self-center flex-grow hidden gap-6 font-medium md:flex">
             <div class="menu"><a href="#">Item 1</a></div>
             <div class="menu"><a href="#">Item 2</a></div>
             <div class="menu"><a href="#">Item 3</a></div>
@@ -20,23 +20,14 @@
 
         <div v-on:click="viewMenu" class="flex-row self-center flex-grow ml-2 md:hidden">
             <i class="text-3xl fas fa-bars"></i>
-            <div :class="menu.value" class="absolute w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg sm:left-56 left-32 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-                <div class="py-1" role="none">
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
-                <form method="POST" action="#" role="none">
-                    <button type="submit" class="block w-full px-4 py-2 text-sm text-left text-gray-700" role="menuitem" tabindex="-1" id="menu-item-3">
-                    Sign out
-                    </button>
-                </form>
-                </div>
+            <div :class="menu.value" class="absolute w-56 mt-2 font-sans font-medium text-black origin-top-right bg-white rounded-md shadow-lg sm:left-56 left-32 ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 1</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 2</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 3</a></div>
+                <div class="mt-2 ml-1 border-b-2"><a href="#">Item 4</a></div>
+                <div class="mt-2 ml-1"><a href="#">Item 5</a></div>
             </div>
         </div>
-
-        
-        
 
         <div v-on:click.stop.prevent="alternate" class="flex justify-end bg-gray-800 border-gray-600 md:border-l-2 md:w-725 profile" v-if="profile.visible == true">
             <div class="px-2 py-2 ">
